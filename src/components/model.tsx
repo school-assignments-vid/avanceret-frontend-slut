@@ -142,9 +142,7 @@ export function ModalContent({
         className={cn(
           "relative z-10 w-full overflow-hidden rounded-lg border-4 border-white bg-black/80 text-white shadow-2xl pointer-events-auto",
           shouldAnimate && "transition-all duration-300 ease-in-out",
-          isVisible
-            ? "opacity-100 scale-100 translate-y-0"
-            : "opacity-0 scale-95 translate-y-4",
+          isVisible ? "opacity-100" : "opacity-0",
           "h-[80vh] lg:h-auto lg:aspect-video lg:max-w-6xl",
           className,
         )}
